@@ -19,14 +19,22 @@
   background-color: #fff;
   padding: 15px 0;
   width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .nav {
   display: none;
 }
 
+.nav__contact {
+  display: none;
+}
+
 .icon {
   float: left;
+  color: #7f7f7f;
 }
 
 .contact {
@@ -38,23 +46,25 @@
   text-decoration: none;
 }
 
-.body {
+.main {
   background-color: #f2f2f2;
   text-align: center;
 }
 
 .title-inner {
   padding: 250px 0;
+  margin-top: 94px;
 }
 
-.title {
+.bolt-theme {
+  font-family: 'Oxygen', sans-serif;
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.title2 {
+.free-bootstrap {
   color: #c0c0c0;
   font-size: 30px;
 }
@@ -65,48 +75,58 @@
   width: 100%;
 }
 
-.box1 {
+.phone__img {
   float: left;
   width: 40%;
   text-align: center;
 }
 
-.box2 {
+.what-we-can-do__box {
   width: 60%;
   float: right;
 }
 
-.text-title {
+.what-we-can-do {
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
   margin-bottom: 35px;
+  color: #fff;
 }
 
-.text {
+.what-we-can-do__text__text {
+  color: #fff;
   font-size: 20px;
-  word-wrap: break-word
+  word-wrap: break-word;
+  line-height: 1.4;
 }
 
-.block {
+.latest__title {
   font-size: 24px;
   margin: 60px 0 40px 0;
   font-family: 'Raleway', sans-serif;
 }
-
-.block1 > img {
+.latest__block__btm > li,
+.latest__block > li {
   margin: 0 100px 80px 0;
+  float: left;
+  opacity: 0.7;
 }
 
-.block2 > img:last-child,
-.block1 > img:last-child {
+.latest__block__btm > li:hover,
+.latest__block > li:hover {
+  opacity: 1;
+}
+
+.latest__block__btm > li:last-child,
+.latest__block > li:last-child {
   margin-right: 0;
 }
 
-.block3 {
+.latest__txt__btn {
   margin-bottom: 70px;
 }
 
-.text2 {
+.latest__txt {
   float: left;
   width: 70%;
   padding-left: 20px;
@@ -128,39 +148,40 @@
   margin-left: 90px;
 }
 
-.skil {
+.skill {
   background-color: #4e4e4e;
   padding: 70px 0 100px 0;
 }
 
-.text3 {
+.skill__title {
+  font-size: 24px;
   color: #fff;
   margin-bottom: 50px;
 }
 
-.skil-size {
+.skill-size {
   max-width: 1028px;
   margin: 0 auto;
 }
 
-.skil-size li {
+.skill-size li {
   max-width: 302px;
 }
 
-.skil-icon {
+.skill-icon {
   margin-right: 180px;
   float: left;
 }
 
-.skil-icon:last-child {
+.skill-icon:last-child {
   margin-right: 0;
 }
 
-.skil-icon-wrap {
+.skill-icon-wrap {
   margin: 0 auto;
 }
 
-.skil-text-color {
+.skill-text-color {
   font-size: 16px;
   color: #fff;
 }
@@ -197,7 +218,7 @@
   box-sizing: border-box;
 }
 
-.block2 > img {
+.latest__block__btm > .latest__img {
   margin: 0 100px 90px 0;
 }
 
@@ -217,46 +238,53 @@
     padding-bottom: 20px;
   }
 
-  .box1 {
+  .what-we-can-do__box {
+    width: 80%;
+  }
+
+  .phone__img {
     text-align: center;
     float: none;
     margin: 0 auto;
     margin-bottom: 20px;
   }
 
-  .box2 {
+  .what-we-can-do__box {
     float: none;
     margin-bottom: 20px;
     margin: 0 auto;
   }
 
-  .block2,
-  .block1 {
+  .latest__block__btm,
+  .latest__block {
     margin-bottom: 80px;
   }
 
-  .block2 > img,
-  .block1 > img {
-
+  .latest__block__btm > li,
+  .latest__block > li {
+    float: none;
     display: block;
     margin: 0 auto;
+    font-size: 0;
   }
 
-  .block2 > img:last-child,
-  .block1 > img:last-child {
+  .latest__block__btm > li:last-child,
+  .latest__block > li:last-child {
     margin: 0 auto;
   }
 
-  .block3 {
+  .latest__txt__btn {
     margin-top: 80px;
   }
 
-  .text2 {
+  .latest__txt {
+    line-height: 1.4;
     float: none;
     word-wrap: break-word;
     margin-bottom: 40px;
     margin: 0 auto;
     margin-bottom: 40px;
+    width: 100%;
   }
 
   .e-mail {
@@ -269,13 +297,13 @@
     margin-left: 0;
   }
 
-  .skil-icon {
+  .skill-icon {
     margin: 0 auto;
     float: none;
     margin-bottom: 88px;
   }
 
-  .skil-icon:last-child {
+  .skill-icon:last-child {
     margin: 0 auto;
   }
 }
@@ -308,19 +336,39 @@
     margin-top: 0;
   }
 
-  .nav {
+  .wrap__menu {
     position: absolute;
-    bottom: 3%;
-    right: 4%;
-    float: right;
-    font-size: 12px;
-    padding: 14px 12px;
-    background-color: #74cfae;
-    color: #fff;
-    display: none;
+    bottom: -50px;
+    width: 100%;
   }
 
-  .nav.open-nav {
+ .nav__contact {
+    text-decoration: none;
+  }
+
+  nav.open-nav .nav__contact {
+     font-size: 12px;
+     padding: 14px 12px;
+     background-color: #74cfae;
+     color: #fff;
+     text-decoration: none;
+     display: block;
+   }
+
+  .nav__frame {
+    background-color: #fff;
+    padding: 5px 0 10px 0;
+    border: 1px solid #dedede;
+    display: none;
+  }
+  nav.open-nav .nav__frame {
+    background-color: #fff;
+    padding: 5px 0 10px 0;
+    border: 1px solid #dedede;
+    display: block;
+  }
+
+  nav.open-nav  {
     display: block;
   }
 
@@ -328,14 +376,14 @@
     padding: 160px 0 130px 0;
   }
 
-  .title {
+  .bolt-theme {
     color: #74cfae;
     font-size: 80px;
     font-weight: 700;
     margin-bottom: 20px;
   }
 
-  .title2 {
+  .free-bootstrap {
     color: #c0c0c0;
     font-size: 30px;
   }
@@ -344,49 +392,59 @@
     padding-bottom: 20px;
   }
 
-  .box1 {
+  .phone__img {
     float: none;
     margin: 0 auto;
     margin-bottom: 20px;
     font-size: 0;
+    width: 75%;
   }
 
-  .box2 {
+  .what-we-can-do__box {
     float: none;
     margin: 0 auto;
+    width: 80%;
   }
 
-  .box1 img {
+  .phone__img .iphone__img {
     width: 100%;
   }
 
-  .block {
+  .latest__title {
     margin: 60px 0 40px 0;
   }
 
-  .block2,
-  .block1 {
+  .latest__block__btm,
+  .latest__block {
     margin-bottom: 80px;
   }
 
-  .block2 > img,
-  .block1 > img {
-
+  .latest__block__btm > li,
+  .latest__block > li {
+    font-size: 0;
+    float: none;
     display: block;
     margin: 0 auto;
   }
 
-  .block2 > img:last-child,
-  .block1 > img:last-child {
+  .latest__block__btm > li:last-child,
+  .latest__block > li:last-child {
     margin: 0 auto;
   }
 
-  .text2 {
+  .latest__img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .latest__txt {
     float: none;
     word-wrap: break-word;
     margin-bottom: 40px;
     margin: 0 auto;
     margin-bottom: 40px;
+    width: 100%;
+    padding: 0;
   }
 
   .e-mail {
@@ -399,17 +457,17 @@
     margin-left: 0;
   }
 
-  .skil-icon {
+  .skill-icon {
     margin: 0 auto;
     float: none;
     margin-bottom: 88px;
   }
 
-  .skil-icon:last-child {
+  .skill-icon:last-child {
     margin: 0 auto;
   }
 
-  .skil-size {
+  .skill-size {
     margin-bottom: 50px;
   }
 

@@ -13,87 +13,90 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
   <header class="header clearfix">
     <div class="inner">
       <h1>
-          <i class="fa fa-bolt fa-4x icon" aria-hidden="true"></i>
-          <a class="contact" href="">contact</a>
-          <!--hamburger menu-->
-            <a href="#" class="hamburger">
-              <span class="span-color"></span>
-              <span class="span-color"></span>
-              <span class="span-color"></span>
-            </a>
-            <ul class="nav">
-              <li>
-                <a href="#">contact</a>
-              </li>
-            </ul>
-          <!--hamburger menu-->
+        <i class="fa fa-bolt fa-4x icon" aria-hidden="true"></i>
+        <a class="contact" href="">contact</a>
       </h1>
+        <!--hamburger menu-->
+      <a href="#" class="hamburger">
+        <span class="span-color"></span>
+        <span class="span-color"></span>
+        <span class="span-color"></span>
+      </a>
     </div>
+      <nav>
+        <ul class="wrap__menu">
+          <li class="nav__frame">
+            <a class="nav__contact" href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+        <!--hamburger menu-->
   </header>
 
-  <div class="body">
+  <main class="main">
     <div class="inner">
       <div class="title-inner">
-        <div class="title">Bolt Theme</div>
-        <div class="title2">FREE BOOTSTRAP THEMES</div>
+        <h1 class="bolt-theme">Bolt Theme</h1>
+        <p class="free-bootstrap">FREE BOOTSTRAP THEMES</p>
       </div>
     </div>
       <section class="carrier clearfix">
         <div class="inner">
-          <div class="box1">
-            <img src="img/iphone.png" alt="">
+          <div class="phone__img">
+            <img class="iphone__img" src="img/iphone.png" alt="">
           </div>
-          <div class="box2">
-            <div class="text-title">WHAT WE CAN DO?</div>
-            <div class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
-            </div>
+          <div class="what-we-can-do__box">
+            <h2 class="what-we-can-do">WHAT WE CAN DO?</h2>
+            <p class="what-we-can-do__text__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+            </p>
           </div>
         </div>
       </section>
       <section class="latest">
         <div class="inner">
-          <div class="block">OUR LATEST WORK</div>
-          <div class="block1 clearfix">
-            <img src="img/01.jpg" alt="">
-            <img src="img/02.jpg" alt="">
-            <img src="img/03.jpg" alt="">
-          </div>
-          <div class="block2 clearfix">
-            <img src="img/04.jpg" alt="">
-            <img src="img/05.jpg" alt="">
-            <img src="img/06.jpg" alt="">
-          </div>
-          <div class="block3 clearfix">
-            <div class="text2"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+          <h2 class="latest__title">OUR LATEST WORK</h2>
+          <ul class="latest__block clearfix">
+            <li><img class="latest__img" src="img/01.jpg" alt=""></li>
+            <li><img class="latest__img" src="img/02.jpg" alt=""></li>
+            <li><img class="latest__img" src="img/03.jpg" alt=""></li>
+          </ul>
+          <ul class="latest__block__btm clearfix">
+            <li><img class="latest__img" src="img/04.jpg" alt=""></li>
+            <li><img class="latest__img" src="img/05.jpg" alt=""></li>
+            <li><img class="latest__img" src="img/06.jpg" alt=""></li>
+          </ul>
+          <div class="latest__txt__btn clearfix">
+            <div class="latest__txt"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
             </div>
             <div class="e-mail"><a class="e-mail-box" href="#">Email Me!</a></div>
           </div>
         </div>
       </section>
-      <section class="skil">
+      <section class="skill">
         <div class="inner">
-          <div class="text3">OUR SKILLS</div>
-            <div class="skil-icon-wrap clearfix">
-              <ul class="skil-size">
-                <li class="skil-icon">
-                  <img src="img/circle_01.png" alt=""><p class="skil-text-color">JavaScript</p>
-                </li>
-                <li class="skil-icon">
-                  <img src="img/circle_02.png" alt=""><p class="skil-text-color">Bootstrap</p>
-                </li>
-                <li class="skil-icon">
-                  <img src="img/circle_03.png" alt=""><p class="skil-text-color">WordPress</p>
-                </li>
-                <li class="skil-icon">
-                  <img src="img/circle_04.png" alt=""><p class="skil-text-color">Photoshop</p>
-                </li>
-              </div>
+          <h2 class="skill__title">OUR SKILLS</h2>
+          <div class="skill-icon-wrap clearfix">
+            <ul class="skill-size clearfix">
+              <li class="skill-icon">
+                <img src="img/circle_01.png" alt=""><p class="skill-text-color">JavaScript</p>
+              </li>
+              <li class="skill-icon">
+                <img src="img/circle_02.png" alt=""><p class="skill-text-color">Bootstrap</p>
+              </li>
+              <li class="skill-icon">
+                <img src="img/circle_03.png" alt=""><p class="skill-text-color">WordPress</p>
+              </li>
+              <li class="skill-icon">
+                <img src="img/circle_04.png" alt=""><p class="skill-text-color">Photoshop</p>
+              </li>
+            </div>
           </div>
       </section>
       <section class="sns-icon">
@@ -113,7 +116,7 @@
         </div>
       </footer>
 
-  </div>
+  </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
