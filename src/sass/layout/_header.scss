@@ -1,0 +1,136 @@
+$mainColor: #74cfae;
+$grayColor: #c0c0c0;
+$maxWidth: 1200px;
+$ipadMaxWidth: 1199px;
+$ipadMinWidth: 767px;
+$spWidth: 766px;
+$display: none;
+@mixin display($display) {
+  display: $display;
+}
+
+@mixin freeBootstrap($grayColor) {
+  color: $grayColor;
+  font-size: 30px;
+}
+
+@mixin lester($display) {
+  font-size: 0;
+  float: $display;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.header {
+  position: fixed;
+  background-color: #fff;
+  padding: 15px 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.nav {
+  @include display($display);
+
+  &__contact {
+    @include display($display);
+  }
+}
+
+.icon {
+  float: left;
+  color: #7f7f7f;
+}
+
+.contact {
+  float: right;
+  font-size: 12px;
+  padding: 14px 12px;
+  background-color: $mainColor;
+  color: #fff;
+  text-decoration: $display;
+
+  @media screen and (max-width: $spWidth) {
+    @include display($display);
+  }
+}
+
+.hamburger {
+  @media screen and (max-width: $spWidth) {
+    display: block;
+    float: right;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+
+  .span-color {
+    @media screen and (max-width: $spWidth) {
+      display: block;
+      width: 25px;
+      height: 2px;
+      margin-top: 4px;
+      background-color: #ddd;
+      border-radius: 4px;
+    }
+  }
+
+  &:first-child {
+    @media screen and (max-width: $spWidth) {
+      margin-top: 0;
+    }
+  }
+}
+
+.wrap__menu {
+  @media screen and (max-width: $spWidth) {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+  }
+
+  .nav__frame {
+    @media screen and (max-width: $spWidth) {
+      background-color: #fff;
+      padding: 5px 0 10px 0;
+      border: 1px solid #dedede;
+      @include display($display);
+    }
+
+    .nav__contact {
+      @media screen and (max-width: $spWidth) {
+        text-decoration: $display;
+      }
+    }
+  }
+}
+
+nav.open-nav .nav__contact {
+  @media screen and (max-width: $spWidth) {
+   font-size: 12px;
+   padding: 14px 12px;
+   background-color: $mainColor;
+   color: #fff;
+   text-decoration: $display;
+   display: block;
+ }
+}
+
+nav.open-nav .nav__frame {
+  @media screen and (max-width: $spWidth) {
+    background-color: #fff;
+    padding: 5px 0 10px 0;
+    border: 1px solid #dedede;
+    display: block;
+  }
+}
+
+nav.open-nav  {
+  @media screen and (max-width: $spWidth) {
+    display: block;
+  }
+}

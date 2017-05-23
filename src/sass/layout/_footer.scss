@@ -1,0 +1,9 @@
+.footer {
+  background-color: $mainColor;
+
+  &-txt {
+    padding: 20px 0 25px 0;
+    color: #fff;
+    text-align: right;
+  }
+}

@@ -1,0 +1,62 @@
+.sns {
+  padding: 200px 0;
+
+  @media screen and (max-width: $spWidth) {
+    padding: 50px 15px 50px 15px;
+  }
+
+  &-size {
+    width: 740px;
+    margin: 0 auto;
+
+    @media screen and (max-width: $spWidth) {
+      width: 100%;
+    }
+
+    &li {
+      max-width: 185px;
+
+      @media screen and (max-width: $spWidth) {
+        max-width: $display;
+      }
+    }
+  }
+}
+
+.sns-frame {
+  float: left;
+
+  @media screen and (max-width: $spWidth) {
+    margin: 0 auto;
+    float: $display;
+  }
+
+  &:last-child {
+    @media screen and (max-width: $spWidth) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.sns-color {
+  color: $mainColor;
+  width: 185px;
+  padding: 20px 0;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: #fff;
+    width: 185px;
+    padding: 20px 0;
+    float: left;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $spWidth) {
+      background-color: #fff;
+      width: 100%;
+      padding: 20px 0;
+      float: left;
+      box-sizing: border-box;
+    }
+  }
+}

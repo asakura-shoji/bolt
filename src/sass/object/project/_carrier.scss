@@ -1,0 +1,72 @@
+.carrier {
+  background-color: $mainColor;
+  padding-top: 50px;
+  width: 100%;
+
+  @media screen and (min-width: $ipadMinWidth) and (max-width: $ipadMaxWidth) {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: $spWidth) {
+    padding-bottom: 20px;
+  }
+}
+
+.phone__img {
+  float: left;
+  width: 40%;
+  text-align: center;
+
+  @media screen and (min-width: $ipadMinWidth) and (max-width: $ipadMaxWidth) {
+    text-align: center;
+    float: $display;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: $spWidth) {
+    float: $display;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 0;
+    width: 75%;
+  }
+}
+
+.what-we-can-do__box {
+  width: 60%;
+  float: right;
+
+  @media screen and (min-width: $ipadMinWidth) and (max-width: $ipadMaxWidth) {
+    width: 80%;
+    float: $display;
+    margin-bottom: 20px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: $spWidth) {
+    float: $display;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+.phone__img .iphone__img {
+  @media screen and (max-width: $spWidth) {
+    width: 100%;
+  }
+}
+
+.what-we-can-do {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.what-we-can-do__text__text {
+  color: #fff;
+  font-size: 20px;
+  word-wrap: break-word;
+  line-height: 1.4;
+}

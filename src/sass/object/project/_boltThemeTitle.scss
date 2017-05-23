@@ -1,0 +1,31 @@
+.title-inner {
+  padding: 250px 0;
+  margin-top: 94px;
+
+  @media screen and (max-width: $spWidth) {
+    padding: 160px 0 130px 0;
+  }
+
+  .bolt-theme {
+    font-family: 'Oxygen', sans-serif;
+    color: $mainColor;
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $spWidth) {
+      color: $mainColor;
+      font-size: 80px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+
+  .free-bootstrap {
+    @include freeBootstrap($grayColor);
+
+    @media screen and (max-width: $spWidth) {
+      @include freeBootstrap($grayColor);
+    }
+  }
+}

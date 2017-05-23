@@ -105,6 +105,7 @@
   margin: 60px 0 40px 0;
   font-family: 'Raleway', sans-serif;
 }
+
 .latest__block__btm > li,
 .latest__block > li {
   margin: 0 100px 80px 0;
@@ -164,7 +165,7 @@
   margin: 0 auto;
 }
 
-.skill-size li {
+.skill-size > li {
   max-width: 302px;
 }
 
@@ -195,7 +196,7 @@
   margin: 0 auto;
 }
 
-.sns-size li {
+.sns-size > li {
   max-width: 185px;
 }
 
@@ -281,9 +282,7 @@
     line-height: 1.4;
     float: none;
     word-wrap: break-word;
-    margin-bottom: 40px;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
     width: 100%;
   }
 
@@ -496,8 +495,7 @@
     box-sizing: border-box;
   }
 
-  .sns-size li {
+  .sns-size > li {
     max-width: none;
   }
-
 }

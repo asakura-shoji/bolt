@@ -1,0 +1,60 @@
+
+.skill {
+  background-color: #4e4e4e;
+  padding: 70px 0 100px 0;
+
+  &__title {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+
+  &-icon-wrap {
+    margin: 0 auto;
+  }
+}
+
+.skill-size {
+  max-width: 1028px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $spWidth) {
+    margin-bottom: 50px;
+  }
+
+  &li {
+    max-width: 302px;
+  }
+}
+
+.skill-icon {
+  margin-right: 180px;
+  float: left;
+  @media screen and (min-width: $ipadMinWidth) and (max-width: $ipadMaxWidth) {
+    margin: 0 auto;
+    float: $display;
+    margin-bottom: 88px;
+  }
+
+  @media screen and (max-width: $spWidth) {
+    margin: 0 auto;
+    float: $display;
+    margin-bottom: 88px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+    @media screen and (min-width: $ipadMinWidth) and (max-width: $ipadMaxWidth) {
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: $spWidth) {
+      margin: 0 auto;
+    }
+  }
+
+  &-color {
+    font-size: 16px;
+    color: #fff;
+  }
+}
