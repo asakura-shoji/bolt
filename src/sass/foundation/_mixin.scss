@@ -1,0 +1,15 @@
+@mixin display($display) {
+  display: $display;
+}
+
+@mixin freeBootstrap($grayColor) {
+  color: $grayColor;
+  font-size: 30px;
+}
+
+@mixin lester($display) {
+  font-size: 0;
+  float: $display;
+  display: block;
+  margin: 0 auto;
+}

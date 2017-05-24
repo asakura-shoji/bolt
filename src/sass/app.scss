@@ -1,4 +1,6 @@
 @import './foundation/_reset';
+@import './foundation/_variable';
+@import './foundation/_mixin';
 @import './object/_utility';
 @import './layout/_header';
 @import './layout/_footer';
@@ -8,33 +10,3 @@
 @import './object/project/_latest';
 @import './object/project/_skill';
 @import './object/project/_sns';
-
-$mainColor: #74cfae;
-$grayColor: #c0c0c0;
-$maxWidth: 1200px;
-$ipadMaxWidth: 1199px;
-$ipadMinWidth: 767px;
-$spWidth: 766px;
-$display: none;
-@mixin display($display) {
-  display: $display;
-}
-
-@mixin freeBootstrap($grayColor) {
-  color: $grayColor;
-  font-size: 30px;
-}
-
-@mixin lester($display) {
-  font-size: 0;
-  float: $display;
-  display: block;
-  margin: 0 auto;
-}
-
-.inner {
-   max-width: $maxWidth;
-   margin: 0 auto;
-   padding: 0 15px;
-   box-sizing: border-box;
-}

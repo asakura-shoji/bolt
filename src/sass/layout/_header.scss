@@ -1,26 +1,3 @@
-$mainColor: #74cfae;
-$grayColor: #c0c0c0;
-$maxWidth: 1200px;
-$ipadMaxWidth: 1199px;
-$ipadMinWidth: 767px;
-$spWidth: 766px;
-$display: none;
-@mixin display($display) {
-  display: $display;
-}
-
-@mixin freeBootstrap($grayColor) {
-  color: $grayColor;
-  font-size: 30px;
-}
-
-@mixin lester($display) {
-  font-size: 0;
-  float: $display;
-  display: block;
-  margin: 0 auto;
-}
-
 
 .header {
   position: fixed;
